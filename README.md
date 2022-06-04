@@ -23,7 +23,7 @@ An Anticheat for the **[FiveM](https://fivem.net/)** Framework.
 
 ## Installation
 
-- Step 1: `git clone REPO`
+- Step 1: `git clone https://github.com/sAsPeCt488/sasAC.git`
 
 - Step 2: Drop the sasAC folder into your resource folder.
 
