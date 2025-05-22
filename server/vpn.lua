@@ -20,7 +20,7 @@ if isEnabled then
         else
             PerformHttpRequest("http://ip-api.com/json/" .. ipIdentifier .. "?fields=proxy", function(err, text, headers)
                 local isAllowed = IsPlayerAceAllowed(source, "sAsPeCt.Anticheat.VPNBypass")
-                if tonumber(err) == 200  hen
+                if tonumber(err) == 200 then
                     local tbl = json.decode(text)
                     if tbl["proxy"] == false or isAllowed then
                         deferrals.done()
