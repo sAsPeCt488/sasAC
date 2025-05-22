@@ -183,7 +183,7 @@ AddEventHandler("playerConnecting", function(playerName)
     local discordID = getDiscord(source, false)
     if discordID == 'Nill' then
         local _, ip, steamhex, license = getPlayerIdentifiers(source)
-        PerformHttpRequest(Config.WebhookNoDiscord, function(err, text, headers) end, 'POST', json.encode({embeds={{title = "[sAsPeCt Anticheat]", description =  "***__NO DISCORD LINKED__*** \n> *Player Name*: " ..playerName.. "\n> *Player IP*: " ..ip.. "\n> *Steam Hex*: "..steamhex.. "\n> *License*: "..license, footer = {text = "© sAsPeCt.sh", color=65491}}}),  { ['Content-Type'] = 'application/json' })
+        PerformHttpRequest(Config.WebhookNoDiscord, function(err, text, headers) end, 'POST', json.encode({embeds={{title = "[sAsPeCt Anticheat]", description =  "***__NO DISCORD LINKED__*** \n> *Player Name*: " ..playerName.. "\n> *Player IP*: " ..ip.. "\n> *Steam Hex*: "..steamhex.. "\n> *License*: "..license, footer = {text = "© sAsPeCt.sh", color=65491}}}}),  { ['Content-Type'] = 'application/json' })
     end
 end)
 
